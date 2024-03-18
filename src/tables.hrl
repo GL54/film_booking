@@ -9,7 +9,8 @@
                role,
                user_name}).
 
--record(films,{name,
+-record(films,{film_uuid,
+               name,
                time,
                seat_category,
                price,
@@ -18,7 +19,15 @@
                date,
                }).
 
--record(seats,{
-              id,
-              status
+-record(booking,{id,
+                 user_id,
+                 ticket_count}).
+
+
+-record(seats_count,{count}).
+
+-record(seats, {id,
+                theater_id,
+                seat_category,
+                status
               })
